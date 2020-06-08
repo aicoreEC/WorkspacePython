@@ -1,0 +1,14 @@
+#
+# 0. Open
+# 1. Review
+# 2. Topic
+#    2.1 string
+#    2.2 tuple
+#    2.3 list
+#    2.4 dictionary
+#    2.5 set
+# 3. Q & A
+# 4. Next
+# 5. Close
+#
+
