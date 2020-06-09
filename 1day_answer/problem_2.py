@@ -42,8 +42,8 @@ variance = ( deviation_squared1 + deviation_squared2 + deviation_squared3 + devi
 
 # 6. 출력
 print( '\nnumber1 = {0:5}\nnumber2 = {1:5}'.format( number1, number2 ) )
-print( 'number3 = {0:5}\nnumber2 = {1:5}'.format( number3, number4 ) )
-print( 'number1 = {0:5}\n'.format( number5 ) )
+print( 'number3 = {0:5}\nnumber4 = {1:5}'.format( number3, number4 ) )
+print( 'number5 = {0:5}\n'.format( number5 ) )
 
 print( 'mean = {:8.2f}\n'.format( mean ) )
 
