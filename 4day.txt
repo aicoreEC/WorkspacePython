@@ -1,0 +1,19 @@
+#
+# 0. Open
+# 1. Review
+# 2. Topic
+#    2.1 comprehension( 내장 ) 기능
+#    2.2 파일 처리
+#    2.3 함수
+# 3. Q & A
+# 4. Next
+# 5. Close
+#
+
+
+
+
+
+
+
+
