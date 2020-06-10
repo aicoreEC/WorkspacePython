@@ -8,4 +8,5 @@
 person = '홍길동01012345678'
 
 # 2. 결과 출력
-print( "{}( {} - {} - {} )".format( person[ :3 ], person[ 3:6 ], person[ 6:10 ], person[ 10: ] ) )
+print( "{}( {} - {} - {} )".format( person[ :3 ], person[ 3:6 ],
+                                    person[ 6:10 ], person[ 10: ] ) )

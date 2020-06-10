@@ -12,7 +12,7 @@ numbers.append( number )
 
 # 2. 합계, 평균 계산
 total = numbers[ 0 ] + numbers[ 1 ]
-average = total / 2
+average = total / len( numbers )
 
 # 3. 출력
 print( '\nnumber1 = {0:5}\nnumber2 = {1:5}\n'.format( numbers[ 0 ], numbers[ 1 ] ) )

@@ -7,7 +7,7 @@
 # 	lee		70 	70	70 	210	70.00
 #
 # 0. 과목수 상수와 3명 학생 저장 list 생성
-SUBJECT_MAX = 3
+SUBJECT_MAX = 3     # 상수( constant )
 
 students = []
 

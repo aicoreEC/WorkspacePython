@@ -11,3 +11,28 @@
 # 5. Close
 #
 
+* Python 자료형
+  1. 원시 자료형 : 값을 의미
+     정수( int )
+     실수( float )
+     복소수( complex )
+     byte
+
+   2. 데이터 집합 자료형 : 값의 집합
+     2.1 Sequence형
+         str( string )
+         tuple
+         list
+     2.2 Mapping형
+         dict
+     2.3 set형
+         set
+
+
+
+
+
+
+
+
+
