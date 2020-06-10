@@ -5,10 +5,15 @@
 # symbolic constant
 MAX = 20
 
+# 1. 변수 정의
 positive = negative = even = odd = error = 0
 
+# 2. MAX 만큼 반복
 for i in range( 1, MAX + 1 ):
+    # 2.1 입력
     number = int( input( 'Input [ %2d ] number : ' % ( i ) ) )
+
+    # 2.2 0이 아니면 양수/음수 판별, 짝수/홀수 판별
     if number != 0:
         if number > 0:
             positive += 1
@@ -22,6 +27,7 @@ for i in range( 1, MAX + 1 ):
         error += 1
         print('Error data'.center( 30, '-' ) )
 
+# 3. 결과 출력
 print( '\npositive count : {:5d}'.format( positive ) )
 print( '\teven count : {:5d}\n\t odd count : {:5d}'.format( even, odd ) )
 print( 'negative count : {:5d}\n'.format( negative ) )

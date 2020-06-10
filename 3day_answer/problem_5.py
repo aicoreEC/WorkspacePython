@@ -15,7 +15,7 @@ MAX_SUBJECT = 3
 EXCELLENT = 90.0
 FAIL = 60.0
 
-# 0. 과목수 상수와 3명 학생 저장 list 생성
+# 0. 변수 정의
 students = []
 
 # 1. 3명 학생 정보 입력
@@ -24,6 +24,7 @@ for i in range( MAX_STUDENT ):
     name = input( "Input student[ %2d ] - name : " % ( i + 1 ) )
     student.append( name )
 
+    # 1.1 학생 한명에 대한 성적 계산
     total = 0
     for i in range( MAX_SUBJECT ):
         subject = int( input( "\tInput subject[ %2d ] : " % ( i + 1 ) ) )
@@ -44,6 +45,7 @@ for i in range( MAX_STUDENT ):
     students.append( student )
     print()
 
+# 2. 석차 계산
 for i in range( len( students ) ):
     rank = 1
     for j in range( len( students ) ):
@@ -54,10 +56,10 @@ for i in range( len( students ) ):
 # 3. 결과 출력
 for i in range( MAX_STUDENT ):
     print( '{:<20s}\t{:3d}\t{:3d}\t{:3d}\t{:5d}\t{:6.2f}\t{:2d}\t{:<10s}'.format( students[ i ][ 0 ],
-                                                                                    students[ i ][ 1 ],
-                                                                                    students[ i ][ 2 ],
-                                                                                    students[ i ][ 3 ],
-                                                                                    students[ i ][ 4 ],
-                                                                                    students[ i ][ 5 ],
-                                                                                    students[ i ][ 7 ],
-                                                                                    students[ i ][ 6 ] ) )
+                                                                                  students[ i ][ 1 ],
+                                                                                  students[ i ][ 2 ],
+                                                                                  students[ i ][ 3 ],
+                                                                                  students[ i ][ 4 ],
+                                                                                  students[ i ][ 5 ],
+                                                                                  students[ i ][ 7 ],
+                                                                                  students[ i ][ 6 ] ) )

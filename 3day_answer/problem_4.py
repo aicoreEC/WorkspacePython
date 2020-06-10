@@ -6,12 +6,14 @@
 END = -99999
 MAX_LINE = 10
 
+# 1. 변수 정의
 numbers = []
 total = 0
 deviations = []
 deviation_squareds = []
 deviation_squareds_total = 0
 
+# 2. END가 입력될 때 까지 반복하며 저장
 i = 1
 number = int( input( "Input number[ %5d ] : " % ( i ) ) )
 while number != END:
@@ -22,14 +24,19 @@ while number != END:
 
 count = len( numbers )
 
+# 3. 평균 계산
 mean = total / count
 
+# 4. 편차, 편차 제곱 계산
 for i in range( count ):
     deviations.append( numbers[ i ] - mean )
     deviation_squareds.append( deviations[ i ] ** 2 )
     deviation_squareds_total += deviation_squareds[ i ]
+
+# 5. 분산 계산
 variance = deviation_squareds_total / count
 
+# 6. 결과 출력
 print()
 line_count = 1
 for i in range( count ):
