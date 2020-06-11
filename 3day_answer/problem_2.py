@@ -3,7 +3,7 @@
 #    출력하는 파이썬 스크립트
 #
 # symbolic constant
-MAX = 20
+MAX = 5
 
 # 1. 변수 정의
 positive = negative = even = odd = error = 0
