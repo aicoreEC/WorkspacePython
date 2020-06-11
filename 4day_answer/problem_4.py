@@ -56,20 +56,41 @@ for i in range( MAX_STUDENT ):
     print()
 
 # 2. 석차 계산
-for i in range( len( students ) ):
+for subject_key, subject_value in students.items():
     rank = 1
-    for j in range( len( students ) ):
-        if students[ i ][ 5 ] < students[ j ][ 5 ]:
+    for target_key, target_value in students.items():
+        if subject_value[ 4 ] < target_value[ 4 ]:
             rank += 1
-    students[ i ].append( rank )
+    subject_value.append( rank )
+    students[ subject_key ] = subject_value
 
 # 3. 결과 출력
-for i in range( MAX_STUDENT ):
-    print( '{:<20s}\t{:3d}\t{:3d}\t{:3d}\t{:5d}\t{:6.2f}\t{:2d}\t{:<10s}'.format( students[ i ][ 0 ],
-                                                                                  students[ i ][ 1 ],
-                                                                                  students[ i ][ 2 ],
-                                                                                  students[ i ][ 3 ],
-                                                                                  students[ i ][ 4 ],
-                                                                                  students[ i ][ 5 ],
-                                                                                  students[ i ][ 7 ],
-                                                                                  students[ i ][ 6 ] ) )
+for key, value in students.items():
+    print( '{:<20s}\t{:3d}\t{:3d}\t{:3d}\t{:5d}\t{:6.2f}\t{:2d}\t{:<10s}'.format( key,
+                                                                                  value[ 0 ],
+                                                                                  value[ 1 ],
+                                                                                  value[ 2 ],
+                                                                                  value[ 3 ],
+                                                                                  value[ 4 ],
+                                                                                  value[ 6 ],
+                                                                                  value[ 5 ] ) )
+
+print()
+search_name = input( '검색할 이름 입력 ( quit : "end" ) : ' )
+while search_name.lower() != 'end':
+    result = students.get( search_name, None )
+    if result != None:
+        print('{:<20s}\t{:3d}\t{:3d}\t{:3d}\t{:5d}\t{:6.2f}\t{:2d}\t{:<10s}\n'.format( search_name,
+                                                                                     result[0],
+                                                                                     result[1],
+                                                                                     result[2],
+                                                                                     result[3],
+                                                                                     result[4],
+                                                                                     result[6],
+                                                                                     result[5] ) )
+    else:
+        error_message = ' ' + search_name + ' 학생 정보는 없습니다. '
+        print( error_message.center( 60, '-' ), '\n' )
+    search_name = input('검색할 이름 입력 ( quit : "end" ) : ')
+
+print( '\n*** 스크립트 종료 ***'.center( 30 ) )

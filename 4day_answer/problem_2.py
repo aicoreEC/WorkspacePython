@@ -40,7 +40,7 @@ variance = deviation_squareds_total / count
 # 7. 결과 출력
 print()
 line_count = 1
-print( '\n입력값 출력 :' )
+print( '\n변량 출력 :' )
 for i in range( count ):
     print( '{:8}'.format( numbers[ i ] ), end = '' )
     line_count += 1
