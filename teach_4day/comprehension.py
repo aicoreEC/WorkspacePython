@@ -152,5 +152,3 @@ print( d2 )
 
 d = { ( k, v ): k + v for k in range( 3 ) for v in range( 3 ) }
 print( d )
-
-
