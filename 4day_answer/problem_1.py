@@ -12,7 +12,7 @@
 # 	9 x 9 = 81
 # 1. 구구단표 list 생성
 multiples = [ [ ( i, j, i * j ) for i in range( 2, 10 ) ] for j in range( 1, 10 ) ]
-
+print( multiples )
 # 2. 구구단표 출력
 for j in range( 8 ):
     for i in range( len( multiples ) ):
