@@ -1,0 +1,17 @@
+#
+# 0. Open
+# 1. Review
+# 2. Topic
+#	 2.1 개인 프로젝트 발표
+# 3. Q & A
+# 4. Next
+# 5. Close
+#
+
+C:\\Workspace\\Python\\Python1차개인별프로젝트\\Python개인프로젝트_DataSet\\
+
+
+
+
+
+
